@@ -1,0 +1,269 @@
+/* Спецификация */
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+	color: #304041;
+	background-color: #FFFFFF;
+}
+
+/*Для правильной работы padding*/
+* {
+	box-sizing: border-box;
+	transition: all 0.5s ease;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 30;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+}
+
+.btn {
+	/*	Мы делаем паддинг на 0, потому что это БЛОЧНЫЙ элемент
+	и мы дали ему фикс длину. Так же мы даем ему длину 
+	Паддингом, но не имеет смысла дублировать.
+	Если бы это был СТРОЧНЫЙ, то он бы расширялся сам  */
+	padding: 18px 0;
+	text-align: center;
+	width: 247px;
+	background: #36CFFF;
+	color: #FFF;
+	font-size: 16px;
+	font-weight: 800;
+	display: block;
+	border-radius: 119px;
+
+}
+
+.btn:hover {
+	background: #8279E9;
+}
+
+.btn-ghost{
+	padding: 18px 0;
+	text-align: center;
+	width: 332px;
+	color: #23CF7D;
+	font-size: 16px;
+	font-weight: 800;
+	display: block;
+	border: 1px solid #23CF7D;
+	border-radius: 94px;
+}
+
+.btn-ghost:hover {
+	color: #fff;
+	background: #23CF7D;
+}	
+
+p {
+	margin: 0px;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+}
+
+/*Для размещения элементов в ряд по-умолчанию*/
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	width: 1140px;
+	margin: 0 auto;
+}
+
+.container_full-height {
+	height: 100%;
+	display: flex;
+	align-items: center
+}
+
+.container_full-width {
+	margin: 0 auto;
+}
+
+section {
+	padding-top: 143px;
+}
+
+.section-title {
+	font-size: 30px;
+	margin-bottom: 96px;
+	text-align: center;
+}
+
+/* Первая секция */
+
+.header {
+	padding: 90px 0px 80px 0px;
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.39%, rgba(255, 126, 54, 0.24) 44.44%), url('../img/main-img.jpg') no-repeat center top / cover;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.offer {
+	margin: 201px 0px 0px 0px;
+}
+
+.offer__town {
+	background: #FFFFFF;
+	color: #000000;
+	border-radius: 78px;
+	font-size: 15px;
+	display: inline;
+	padding: 8px 17px;
+	line-height: 18px;
+}
+
+.offer__title {
+	font-size: 60px;
+	letter-spacing: 0.145em;
+	margin: 24px 0;
+}
+
+.offer__call {
+	font-size: 20px;
+	margin: 24px 0;
+}
+
+.offer__btn {
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.arrow-down {
+	background: url('../img/arrow-down.svg');
+	opacity: 0.5;
+	width: 18px;
+	height: 26.5px;
+	display: block;
+	margin: 217 auto 0;
+}
+
+.arrow-down:hover {
+	opacity: 1;
+}	
+
+/*Вторая секция*/
+
+.review {
+	background: #EAF4F6 url('../img/review-img.jpg') no-repeat right top / 40%;
+	height: 649px;
+}
+
+.review__wrap {
+	padding-left: 73px;
+	padding-right: 78px;
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+.review__route{
+	font-weight: 500;
+	font-size: 15px;
+	color: ##789AA0;
+	text-transform: uppercase
+}
+
+.review__title {
+	font-size: 24px;
+	color: #304041;
+	padding: 20px 0 40px;
+}
+
+.review__item {
+	width: 521px;
+	line-height: 1.52em;
+	font-size: 15px;
+}
+
+.review__item_middle {
+	margin: 20px 0;
+}
+
+.arrow-next {
+	background: url('../img/arrow-next.svg');
+	opacity: 0.5;
+	width: 68px;
+	height: 17px;
+	display: block;
+	margin: 48px 0px 0px 0px;
+}
+
+.arrow-next:hover {
+	opacity: 1;	
+}
+
+.routes__btn {
+	margin: 90px auto 0;
+}
+
+/* 3 секция */
+
+.online-gid__review {
+	background: url(../img/review-img2.jpg) no-repeat right top / 50%;
+	height: 450px;
+}
+
+.online-gid__wrap {
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.online-gid__item {
+	width: 407px;
+	position: relative;
+	font-size: 16px;
+	margin-bottom: 61px;
+}
+
+.online-gid__item:before {
+	border-radius: 23px;
+	transform: rotate(90deg);
+	content:'';
+	display: block;
+	width: 7px;
+	height: 65px;
+	background: #9E9EB7;
+	position: absolute;
+	left: 7%;
+	bottom: 40%;
+}
+
+.online-gid__item:last-child {
+	margin-bottom: 0;
+}	
+
+/* Футер */
+
+.footer-content {
+	display: flex;
+	padding: 147px 0;
+}
+
+.footer__text {
+	font-size: 14px;
+	color: #6E7187;
+	margin-right: 72px;
+}
